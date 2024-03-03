@@ -8,7 +8,9 @@ function toggleMenu() {
   
 
 function SayHello() {
-  var hello = document.getElementById("menu-btn");
+  var hello = document.getElementById("button");
+  document.addEventListener('click');
+  alert('button clicked');
   console.log("Button Clicked")
 }
 

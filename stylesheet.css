@@ -11,6 +11,7 @@ body {
   image-rendering: auto;
   font-size: 16px;
   line-height: 1.5;
+  max-height: 800px;
 }
 
 
@@ -23,6 +24,9 @@ body {
 @media screen and (max-width: 768px) {
   .header {
     padding: 20px; /* Adjust padding for smaller screens */
+  }
+  body {
+    max-width: 768px;
   }
 }
 
@@ -237,6 +241,10 @@ h5 {
   color: #CCCCFF;
 }
 
+.contact {
+  margin-top: 140%;
+}
+
 
 .side p {
   text-align: none;
@@ -252,22 +260,18 @@ h5 {
 #OurStory {
   background-color: #ccc;
   text-decoration: none;
-  width: fit-content;
+  width: 10%;
   border-radius: 25px;
 }
 
-/* Fake image, just for demo */
-.fakeimg {
-  background-color: none;
-  width: fit-content;
-  padding: 20px;
-}
+
 
 /* Footer */
 .footer {
   background-image: url('subtle-prism.png');
   padding: 10px;
   text-align: center;
+  margin-top: 85%;
   clear: both;
 }
 
@@ -279,6 +283,7 @@ h5 {
 /* Button style */
 .button {
   background-color: #007bff;
+  height: fit-content;
   color: white;
   padding: 10px 20px;
   border: none;
@@ -358,6 +363,7 @@ h5 {
   background-color: hsl(240, 69%, 69%);
   padding: 50px;
   margin-top: 20px;
+  margin-left: 250px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   text-align: center;
   border-radius: 30px;
@@ -397,3 +403,4 @@ h5 {
   color: #000;
   background-color: white;
 }
+

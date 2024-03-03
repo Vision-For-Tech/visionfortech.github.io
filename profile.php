@@ -15,12 +15,14 @@
         <button type="submit"><i class="fa fa-search"></i></button>
       <div class="login-button">
         <img src="log-in.png" alt="Login" class="login-img" />
-        <a href="login.html" >Login</a>
-          <!--<!-- Add a profile section
-  <div class="profile">
-    <img src="avatar.png" alt="Profile Picture">
-    <h4>Welcome, User123!</h4>
-  </div>-->
+        <?php 
+            session_start(); 
+            if(isset($_SESSION["username"])) {
+                echo '<a href="Editprofile.html">'. $_SESSION["username"] .'</a>';
+            } else {
+                echo '<a href="login.html">Login</a>';
+            }
+        ?>
       </div>
       </div>
     </div>
@@ -64,20 +66,20 @@
 
 
   
-  <div class="main">
+  <!--<div class="main">
       <h2>Welcome to Smartypants!</h2>
       <svg id="bullseye-svg" width="200" height="190" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
-        <!-- Outer circle -->
+        <!-- Outer circle --
         <circle cx="200" cy="200" r="180" fill="#ff0000" />
-        <!-- Middle circle -->
+        <!-- Middle circle --
         <circle cx="200" cy="200" r="140" fill="#ffffff" />
-        <!-- Inner circle -->
+        <!-- Inner circle --
         <circle cx="200" cy="200" r="100" fill="#0000ff" />
         <circle cx="200" cy="200" r="50"  fill="#000000"/>
-        <!-- A+ text -->
+        <!-- A+ text --
         <text x="150" y="220" font-size="100" fill="#ffffff" font-family="cursive">A+</text>
       </svg>
-      <!-- Rest of your content goes here -->
+      <!-- Rest of your content goes here --
       <div class="slideshow">
         <svg id="slides" width="100" height="50" viewbox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
 
@@ -85,9 +87,9 @@
 
 
         </svg>
-        <!-- Add more slides as needed -->
+        <!-- Add more slides as needed --
       </div>
-    <!--<div class="fakeimg" style="height:200px; size: 100px;"><img src="magnifying-glass.png" alt=""></div>-->
+    <!--<div class="fakeimg" style="height:200px; size: 100px;"><img src="magnifying-glass.png" alt=""></div>--
     <p id="OurStory"><a href="OurStory.html"> Our Story..</a></p>
     <p>This is our app made by college high school students aimed at aiding students ace their Cambridge IGCSE exams by providing topic by topic questions............................</p>
     <button class="button"><a href="register.html">Get Started</a></button>
@@ -114,7 +116,7 @@
         </fieldset>
         </form>
         </div>
-    </div>
+    </div>-->
   
   </div>
 </div>
